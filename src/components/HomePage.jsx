@@ -74,8 +74,6 @@ export default function HomePage({ results, onSearch }) {
 
   const handleSearch = (event) => {
     event.preventDefault();
-    setChosenCuisines([]);
-    setSearchTerm("");
     setCurrentPage(1);
     onSearch(event, searchTerm, chosenCuisines);
   };
